@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de Distance Gratuit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simulateur de Distance Gratuit</h2>
+    <form id="distance-form">
+        <label for="origin">Adresse de départ:</label>
+        <input type="text" id="origin" name="origin" required>
+
+        <label for="destination">Adresse d'arrivée:</label>
+        <input type="text" id="destination" name="destination" required>
+
+        <button type="button" onclick="calculateDistance()">Calculer la Distance</button>
+    </form>
+    <h3>Distance: <span id="result">0 km</span></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
